@@ -28,7 +28,7 @@ const createBalloon = () => {
   balloonString.classList.add("balloon__string");
   balloonString.setAttribute(
     "d",
-    "M50.24,119.5c-.46,23.66,1.75,39.64,3.46,48.24,.93,4.7-.4,9.57-3.61,13.05-6.82,7.41-17.45,21.16-15.94,33.55l-.15,3.66"
+    "M50.2,119.5c-0.2,10-2.3,17-1.7,24.3c0.7,9.9,1.5,10.7-5.2,18.4c-6.4,10.4,19.4,6.5,9.1,24.2, c-5.9,6.4-7.3,10.4-3.2,18.6c1.5,3,2.3,6.2,2.4,9.5l0.1,3.5"
   );
 
   const balloonMain = document.createElementNS(

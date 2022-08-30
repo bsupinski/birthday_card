@@ -3,33 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="index.css" />
     <script defer src="colors.js"></script>
-    <script defer src="index.js"></script>
+    <!-- <script defer src="balloon.js"></script> -->
     <script defer src="timer.js"></script>
     <title>test</title>
   </head>
-  <body></body>
-    <div class="timer">
-      <div class="timer-container">
-        <h4>Days</h4>
-        <span class="days"></span>
+  <body>
+    <div class="timer__overlay">
+      <div class="timer_container">
+        <div class="timer">
+          <span class="days time__box"></span>
+          <span class="hours time__box"></span>
+          <span class="minutes time__box"></span>
+          <span class="seconds time__box"></span>
+        </div>
       </div>
-      <div class="timer-container">
-        <h4>Hours</h4>
-        <span class="hours"></span>
-      </div>
-      <div class="timer-container">
-        <h4>Minutes</h4>
-        <span class="minutes"></span>
-      </div>
-      <div class="timer-container">
-        <h4>Seconds</h4>
-        <span class="seconds"></span>
-      </div>
-    </div>
-    <div class="test1">
-      <div class="test2"></div>
     </div>
   </body>
 </html>
