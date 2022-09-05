@@ -8,6 +8,10 @@ body {
   overflow: hidden;
   width: 100vw;
   height: 100vh;
+  background-image: url(img/monolith.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .timer__overlay {
