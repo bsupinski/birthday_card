@@ -1,5 +1,5 @@
+const body = document.querySelector("body");
 const overlay = document.querySelector(".timer__overlay");
-
 const days = document.querySelector(".days");
 const hours = document.querySelector(".hours");
 const minutes = document.querySelector(".minutes");
@@ -12,8 +12,14 @@ let minutesLeft;
 let secondsLeft;
 
 const backGroundChange = (daysLeft) => {
+  if (daysLeft < 6) {
+    overlay.style.backgroundColor = "rgba(0, 0, 0, 0.6)";
+    body.style.backgroundImage = "url('img/skyline.jpg')";
+    return;
+  }
   if (daysLeft < 10) {
     overlay.style.backgroundColor = "rgba(0, 0, 0, 0.8)";
+    body.style.backgroundImage = "url('img/monolith.svg')";
     return;
   }
 };
