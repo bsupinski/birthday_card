@@ -5,6 +5,9 @@ const hours = document.querySelector(".hours");
 const minutes = document.querySelector(".minutes");
 const seconds = document.querySelector(".seconds");
 
+const today = new Date();
+const brittneysBirthday = new Date("September 14, 2022 00:00:00");
+
 // Globals
 let daysLeft;
 let hoursLeft;
@@ -12,6 +15,11 @@ let minutesLeft;
 let secondsLeft;
 
 const backGroundChange = (daysLeft) => {
+  if (daysLeft < 4) {
+    overlay.style.backgroundColor = "rgba(0, 0, 0, 0.4)";
+    body.style.backgroundImage = "url('img/cthulu-arrives.jpg')";
+    return;
+  }
   if (daysLeft < 6) {
     overlay.style.backgroundColor = "rgba(0, 0, 0, 0.6)";
     body.style.backgroundImage = "url('img/skyline.jpg')";
@@ -23,8 +31,6 @@ const backGroundChange = (daysLeft) => {
     return;
   }
 };
-
-const brittneysBirthday = new Date("September 14, 2022 00:00:00");
 
 const alwaysDoubleDigits = (time, container) => {
   time < 10
@@ -55,3 +61,10 @@ const countdown = () => {
 };
 
 countdown();
+
+if (today.toDateString() >= brittneysBirthday.toDateString()) {
+  repeatBalloons();
+  repeatBalloons();
+  repeatBalloons();
+  addBalloonDOM();
+}

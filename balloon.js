@@ -1,5 +1,3 @@
-const body = document.querySelector("body");
-
 const randomBetween = (min, max) =>
   Math.floor(Math.random() * (max - min) + min);
 
@@ -69,9 +67,3 @@ const repeatBalloons = () =>
   setInterval(() => {
     addBalloonDOM();
   }, randomBetween(2000, 7000));
-
-repeatBalloons();
-repeatBalloons();
-repeatBalloons();
-
-addBalloonDOM();
