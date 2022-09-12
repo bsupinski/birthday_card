@@ -15,6 +15,11 @@ let minutesLeft;
 let secondsLeft;
 
 const backGroundChange = (daysLeft) => {
+  if (daysLeft <= 0) {
+    overlay.style.display = "none";
+    body.style.backgroundImage = "url('img/finale - cthulu.jpg')";
+    return;
+  }
   if (daysLeft < 4) {
     overlay.style.backgroundColor = "rgba(0, 0, 0, 0.4)";
     body.style.backgroundImage = "url('img/cthulu-arrives.jpg')";
@@ -66,5 +71,7 @@ if (today.toDateString() >= brittneysBirthday.toDateString()) {
   repeatBalloons();
   repeatBalloons();
   repeatBalloons();
-  addBalloonDOM();
+  repeatBalloons();
+  repeatBalloons();
+  repeatBalloons();
 }

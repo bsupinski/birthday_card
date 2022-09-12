@@ -66,4 +66,4 @@ const addBalloonDOM = () => {
 const repeatBalloons = () =>
   setInterval(() => {
     addBalloonDOM();
-  }, randomBetween(2000, 7000));
+  }, randomBetween(1000, 7000));
