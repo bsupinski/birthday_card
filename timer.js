@@ -15,7 +15,7 @@ let minutesLeft;
 let secondsLeft;
 
 const backGroundChange = (daysLeft) => {
-  if (daysLeft <= 0) {
+  if (daysLeft < 0) {
     overlay.style.display = "none";
     body.style.backgroundImage = "url('img/finale - cthulu.jpg')";
     return;
