@@ -67,7 +67,7 @@ const countdown = () => {
 
 countdown();
 
-if (today.toDateString() <= brittneysBirthday.toDateString()) {
+if (today.toDateString() >= brittneysBirthday.toDateString()) {
   repeatBalloons();
   repeatBalloons();
   repeatBalloons();
